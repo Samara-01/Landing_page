@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <link rel="shortcut icon" href="Imagens/favicon-32x32.png" type="image/x-icon">
+
+
+</head>
+<body>
+    <header> 
+        <nav>
+         <a href="index.html">Home</a>
+         <a href="Curriculo.html"> Curriculo</a>
+         <a href="Github.html"> Github</a>
+         <a href="Servicos.html"> Servicos</a>
+         <a href="Contato.html"> Contato</a>
+        </nav>
+    </header>
+
+    <section>
+    <h1>Entre em Contato</h1>
+    <p>Preencha o formulário para solicitar um orçamento.</p>
+    
+
+    <form action="#" method="post">
+
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="perfil">Você é:</label>
+        <select id="perfil" name="perfil">
+            <option value="fisica">Pessoa física</option>
+            <option value="juridica">Pessoa jurídica</option>
+        </select>
+
+        <label for="horario">Melhor horário para contato:</label>
+        <select id="horario" name="horario">
+            <option value="manha">Manhã</option>
+            <option value="tarde">Tarde</option>
+            <option value="noite">Noite</option>
+        </select>
+
+        <p>Qual serviço deseja contratar?</p>
+
+        <label>
+            <input type="checkbox" name="servico" value="estatico">
+            Site estático
+        </label>
+
+        <label>
+            <input type="checkbox" name="servico" value="dinamico">
+            Site dinâmico
+        </label>
+
+        <label>
+            <input type="checkbox" name="servico" value="avancado">
+            Site avançado
+        </label>
+
+        <label for="descricao">Descreva seu projeto:</label>
+        <textarea id="descricao" name="descricao"
+                  rows="5" required></textarea>
+
+        <label for="orcamento">Orçamento disponível:</label>
+        <input type="number" id="orcamento" name="orcamento"
+               min="0" placeholder="Valor em reais">
+
+        <button type="submit">Enviar solicitação</button>
+
+    </form>
+</section>
+    
+</body>
+</html>
